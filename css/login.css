@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Setando cor por variavel **/
+:root {
+  --primary-color: rgb(15, 85, 237);
+  --primary-color-darker: rgb(12, 55, 150);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: rgb(245, 245, 241);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+form input,
+form label,
+
+.botao-de-login {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+.botao-de-login {
+  border: none;
+  background: var(--primary-color);
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.botao-de-login:hover {
+  background: var(--primary-color-darker);
+}
+
+.botao-de-login:active {
+  background: rgb(224, 20, 149);
+}
+
+/*CAMPO DOS BOTÕES DE AÇÃO DO LOGIN*/
+.campo-das-acoes {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+
+}
+
+.botao-de-acao {
+  cursor: pointer;
+  border: none;
+  background: var(--primary-color);
+  font-size: 18px;
+  font-weight: 700;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.botao-de-acao:hover {
+  background: var(--primary-color-darker);
+}
+
+.botao-de-acao:active {
+  background: rgb(224, 20, 149);
+}
+
+/* PERMISSAO */
+.permission {
+  font-size: 18px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/*MODAL*/
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.modal-content {
+  background: rgb(245, 245, 241);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close:hover {
+  color: red;
+}
+
+.close {
+  position: absolute;
+  top: -15px;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 50px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 30px;
+  height: 30px;
+  background: rgb(245, 245, 241);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* MARGEM ENTRE OS USUARIOS DA BASE */
+.usuario-item {
+  margin-bottom: 10px;
+  background-color: rgb(76, 76, 245);
+}
